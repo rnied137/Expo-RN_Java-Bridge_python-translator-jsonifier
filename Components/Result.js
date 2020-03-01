@@ -1,0 +1,783 @@
+const Result = [{
+	"english": "cup",
+	"german": "Tasse",
+	"polish": "puchar",
+	"french": "tasse"
+}, {
+	"english": "curious",
+	"german": "neugierig",
+	"polish": "Ciekawy",
+	"french": "curieux"
+}, {
+	"english": "current",
+	"german": "Aktuell",
+	"polish": "obecny",
+	"french": "actuel"
+}, {
+	"english": "currently",
+	"german": "Aktuell",
+	"polish": "obecnie",
+	"french": "actuellement"
+}, {
+	"english": "curriculum",
+	"german": "Lehrplan",
+	"polish": "program kursu",
+	"french": "programme"
+}, {
+	"english": "custom",
+	"german": "individuell definiert",
+	"polish": "w\u0142asne",
+	"french": "personnalis\u00e9"
+}, {
+	"english": "customer",
+	"german": "Kunde:",
+	"polish": "klient",
+	"french": "client"
+}, {
+	"english": "cut",
+	"german": "schneiden, geschnitten",
+	"polish": "wytnij",
+	"french": "cut"
+}, {
+	"english": "cycle",
+	"german": "Zyklus",
+	"polish": "Trzeci cykl",
+	"french": "cycle"
+}, {
+	"english": "dad",
+	"german": "Papa",
+	"polish": "Tata",
+	"french": "Dad"
+}, {
+	"english": "daily",
+	"german": "t\u00e4glich",
+	"polish": "dziennie",
+	"french": "quotidiennement"
+}, {
+	"english": "damage",
+	"german": "Sch\u00e4den",
+	"polish": "uszkodzenia",
+	"french": "d\u00e9g\u00e2ts (m), l\u00e9sions (f)"
+}, {
+	"english": "dance",
+	"german": "Tanz",
+	"polish": "ta\u0144czy\u0107",
+	"french": "danse"
+}, {
+	"english": "danger",
+	"german": "Gefahr",
+	"polish": "zagro\u017cenie",
+	"french": "danger"
+}, {
+	"english": "dangerous",
+	"german": "gef\u00e4hrlich",
+	"polish": "niebezpiecznych",
+	"french": "dangereux"
+}, {
+	"english": "dare",
+	"german": "Pflicht",
+	"polish": "DARE",
+	"french": "oser"
+}, {
+	"english": "dark",
+	"german": "dunkel, d\u00fcster",
+	"polish": "ciemny",
+	"french": "sombre"
+}, {
+	"english": "darkness",
+	"german": "Dunkelheit",
+	"polish": "zaciemnienie",
+	"french": "t\u00e9n\u00e8bres"
+}, {
+	"english": "data",
+	"german": "Daten",
+	"polish": "dane",
+	"french": "donn\u00e9e"
+}, {
+	"english": "date",
+	"german": "Datum",
+	"polish": "data",
+	"french": "Date"
+}, {
+	"english": "daughter",
+	"german": "Tochter",
+	"polish": "nast\u0119pnik grafu",
+	"french": "fille"
+}, {
+	"english": "day",
+	"german": "Tag",
+	"polish": "dzie\u0144",
+	"french": "jour"
+}, {
+	"english": "dead",
+	"german": "tot",
+	"polish": "wygas\u0142y",
+	"french": "mort"
+}, {
+	"english": "deal",
+	"german": "Empfehlung",
+	"polish": "bal",
+	"french": "affaire"
+}, {
+	"english": "dealer",
+	"german": "Vertretung",
+	"polish": "dealera",
+	"french": "distributeur, marchand, n\u00e9gociant, concessionnaire"
+}, {
+	"english": "dear",
+	"german": "sehr geehrter",
+	"polish": "drogi",
+	"french": "cher/ch\u00e8re"
+}, {
+	"english": "death",
+	"german": "Tod",
+	"polish": "\u015bmier\u0107",
+	"french": "mort"
+}, {
+	"english": "debate",
+	"german": "Beschlussfassung",
+	"polish": "k\u0142\u00f3ci\u0107",
+	"french": "d\u00e9bat"
+}, {
+	"english": "debt",
+	"german": "Schuldtitel",
+	"polish": "zobowi\u0105zanie",
+	"french": "dette"
+}, {
+	"english": "decade",
+	"german": "Jahrzehnt",
+	"polish": "dekada",
+	"french": "d\u00e9cennie"
+}, {
+	"english": "decide",
+	"german": "entscheiden",
+	"polish": "decydowa\u0107",
+	"french": "D\u00e9cidez"
+}, {
+	"english": "decision",
+	"german": "Entscheidung",
+	"polish": "klienta",
+	"french": "d\u00e9cision"
+}, {
+	"english": "deck",
+	"german": "deck",
+	"polish": "magnetofon bez wzmacniacza mocy",
+	"french": "pont"
+}, {
+	"english": "declare",
+	"german": "n) ich/wir,",
+	"polish": "DEKLARUJ",
+	"french": "d\u00e9clarer sa preuve close"
+}, {
+	"english": "decline",
+	"german": "ablehnen",
+	"polish": "pochylnia",
+	"french": "refuse"
+}, {
+	"english": "decrease",
+	"german": "Verringerung",
+	"polish": "spadek",
+	"french": "diminution"
+}, {
+	"english": "deep",
+	"german": "tief",
+	"polish": "gt\u0119boki",
+	"french": "deep"
+}, {
+	"english": "deeply",
+	"german": "tief...",
+	"polish": "g\u0142\u0119boko",
+	"french": "\u00e0 fond..."
+}, {
+	"english": "deer",
+	"german": "Hirsch",
+	"polish": "zwierzyna p\u0142owa",
+	"french": "Cerf"
+}, {
+	"english": "defeat",
+	"german": "Niederlage",
+	"polish": "Pokonac",
+	"french": "mettre en minorit\u00e9"
+}, {
+	"english": "defend",
+	"german": "Verteidigen",
+	"polish": "Obro\u0144ca",
+	"french": "d\u00e9fendre"
+}, {
+	"english": "defendant",
+	"german": "verwerende partij",
+	"polish": "strona pozwana",
+	"french": "d\u00e9fendeur"
+}, {
+	"english": "defense",
+	"german": "Verteidigung",
+	"polish": "obrona",
+	"french": "moyen de d\u00e9fense"
+}, {
+	"english": "defensive",
+	"german": "Verteidigen",
+	"polish": "defensywno\u015b\u0107",
+	"french": "D\u00e9fensif"
+}, {
+	"english": "deficit",
+	"german": "Defizit",
+	"polish": "niedob\u00f3r",
+	"french": "d\u00e9ficit"
+}, {
+	"english": "define",
+	"german": "definiere",
+	"polish": "definicjaTag Type",
+	"french": "d\u00e9finir"
+}, {
+	"english": "definitely",
+	"german": "dastim",
+	"polish": "ZDECYDOWANIE; OSTATECZNIE",
+	"french": "certainement"
+}, {
+	"english": "definition",
+	"german": "Definition",
+	"polish": "definition",
+	"french": "et"
+}, {
+	"english": "degree",
+	"german": "Verwandtschaftsgrad zueinander stehen.",
+	"polish": "stopni",
+	"french": "Exp\u00e9rience"
+}, {
+	"english": "delay",
+	"german": "Verz\u00f6gerung",
+	"polish": "op\u00f3\u017anienie",
+	"french": "retard"
+}, {
+	"english": "deliver",
+	"german": "liefern",
+	"polish": "dostarcza\u0107",
+	"french": "s\u2019acquitter de"
+}, {
+	"english": "delivery",
+	"german": "Lieferung",
+	"polish": "Dostawa",
+	"french": "livraison"
+}, {
+	"english": "demand",
+	"german": "Nachfrage",
+	"polish": "Popyt",
+	"french": "exigent"
+}, {
+	"english": "democracy",
+	"german": "Demokratie",
+	"polish": "demokracji,",
+	"french": "d\u00e9mocratie"
+}, {
+	"english": "Democrat",
+	"german": "Demokrat",
+	"polish": "Demokraci",
+	"french": "d\u00e9mocrate"
+}, {
+	"english": "democratic",
+	"german": "demokratisch",
+	"polish": "Demokracja",
+	"french": "d\u00e9mocratique"
+}, {
+	"english": "demonstrate",
+	"german": "demonstrieren.",
+	"polish": "wystawi\u0107",
+	"french": "d\u00e9montrer"
+}, {
+	"english": "demonstration",
+	"german": "Vorf\u00fchrung",
+	"polish": "instalacja demonstracyjna",
+	"french": "d\u00e9monstration"
+}, {
+	"english": "deny",
+	"german": "verweigern",
+	"polish": "Odm\u00f3w",
+	"french": "refuser"
+}, {
+	"english": "department",
+	"german": "Abteilung",
+	"polish": "Departament",
+	"french": "entit\u00e9"
+}, {
+	"english": "depend",
+	"german": "ab",
+	"polish": "# DEPEND! Error: division by zero",
+	"french": "Depend"
+}, {
+	"english": "dependent",
+	"german": "abh\u00e4ngig",
+	"polish": "Zale\u017cny",
+	"french": "personne \u00e0 charge"
+}, {
+	"english": "depending",
+	"german": "Dependability",
+	"polish": "W zale\u017cno\u015bci",
+	"french": "En fonction"
+}, {
+	"english": "depict",
+	"german": "darstellen",
+	"polish": "opisywa\u0107",
+	"french": "d\u00e9crire"
+}, {
+	"english": "depression",
+	"german": "Depression",
+	"polish": "depresja",
+	"french": "d\u00e9pression"
+}, {
+	"english": "depth",
+	"german": "Tiefe",
+	"polish": "g\u0142\u0119bi",
+	"french": "profondeur"
+}, {
+	"english": "deputy",
+	"german": "bevollm\u00e4chtigter",
+	"polish": "pe\u0142nomocnik",
+	"french": "adjoint"
+}, {
+	"english": "derive",
+	"german": "ableiten",
+	"polish": "Derive",
+	"french": "D\u00e9rive"
+}, {
+	"english": "describe",
+	"german": "Beschreiben",
+	"polish": "opisywa\u0107",
+	"french": "describe"
+}, {
+	"english": "description",
+	"german": "Beschreibung",
+	"polish": "opis",
+	"french": "description"
+}, {
+	"english": "desert",
+	"german": "W\u00fcste",
+	"polish": "pustynia",
+	"french": "desert"
+}, {
+	"english": "deserve",
+	"german": "verdienen",
+	"polish": "Zas\u0142u\u017cy\u0107",
+	"french": "m\u00e9ritent"
+}, {
+	"english": "design",
+	"german": "Design",
+	"polish": "projekt",
+	"french": "conception"
+}, {
+	"english": "designer",
+	"german": "Designer",
+	"polish": "projektant",
+	"french": "concepteur"
+}, {
+	"english": "desire",
+	"german": "Begierde",
+	"polish": "chcie\u0107",
+	"french": "d\u00e9sir"
+}, {
+	"english": "desk",
+	"german": "Schreibtisch",
+	"polish": "biurko",
+	"french": "bureau"
+}, {
+	"english": "desperate",
+	"german": "verzweifelt",
+	"polish": "rozpaczliwy",
+	"french": "(dictionaire)"
+}, {
+	"english": "despite",
+	"german": "trotz",
+	"polish": "pomimo",
+	"french": "Malgr\u00e9"
+}, {
+	"english": "destroy",
+	"german": "unsch\u00e4dlich beseitigen",
+	"polish": "destrukcji.",
+	"french": "d\u00e9truire"
+}, {
+	"english": "destruction",
+	"german": "vernichtung",
+	"polish": "zniszczenie",
+	"french": "la destruction"
+}, {
+	"english": "detail",
+	"german": "Detail",
+	"polish": "szczeg\u00f3\u0142\u00f3w",
+	"french": "d\u00e9tail"
+}, {
+	"english": "detailed",
+	"german": "detailiert",
+	"polish": "dok\u0142adny / szczeg\u00f3\u0142owy",
+	"french": "d\u00e9taill\u00e9"
+}, {
+	"english": "detect",
+	"german": "nachweisen",
+	"polish": "odkrywa\u0107",
+	"french": "d\u00e9tectez"
+}, {
+	"english": "determine",
+	"german": "bestimmen",
+	"polish": "decydowa\u0107",
+	"french": "fixer"
+}, {
+	"english": "develop",
+	"german": "entwickeln",
+	"polish": "tworzenie",
+	"french": "d\u00e9velopper"
+}, {
+	"english": "developing",
+	"german": "Entwicklung",
+	"polish": "Wyrabianie",
+	"french": "d\u00e9veloppant"
+}, {
+	"english": "development",
+	"german": "Planentwicklung",
+	"polish": "produktu",
+	"french": "d'\u00e9laboration"
+}, {
+	"english": "device",
+	"german": "Ger\u00e4t",
+	"polish": "urz\u0105dzenia",
+	"french": "l'appareil"
+}, {
+	"english": "devote",
+	"german": "widmen",
+	"polish": "Po\u015bwi\u0119ca\u0107",
+	"french": "Sainte D\u00e9vote"
+}, {
+	"english": "dialogue",
+	"german": "Dialog",
+	"polish": "Dialog",
+	"french": "dialogue"
+}, {
+	"english": "die",
+	"german": "die",
+	"polish": "ci\u0105gad\u0142o",
+	"french": "coussinet, d\u00e9, \u00e9tampe, fili\u00e8re, matrice, peigne, poin\u00e7on, semelle"
+}, {
+	"english": "diet",
+	"german": "Di\u00e4t",
+	"polish": "Dieta",
+	"french": "r\u00e9gime alimentaire"
+}, {
+	"english": "differ",
+	"german": "Differenz",
+	"polish": "r\u00f3\u017cni\u0107 si\u0119",
+	"french": "diff\u00e9rer"
+}, {
+	"english": "difference",
+	"german": "r\u00fccklage",
+	"polish": "r\u00f3\u017cnica",
+	"french": "diff\u00e9rence"
+}, {
+	"english": "different",
+	"german": "anders",
+	"polish": "r\u00f3\u017cne",
+	"french": "diff\u00e9rentes"
+}, {
+	"english": "differently",
+	"german": "andersartig",
+	"polish": "r\u00f3\u017cnie",
+	"french": "de fa\u00e7on diff\u00e9rente."
+}, {
+	"english": "difficult",
+	"german": "schwierig",
+	"polish": "trudno\u015bci",
+	"french": "c'\u00e9tait vraiment difficile"
+}, {
+	"english": "difficulty",
+	"german": "Schwierigkeit",
+	"polish": "trudno\u015bci",
+	"french": "difficult\u00e9"
+}, {
+	"english": "dig",
+	"german": "graben",
+	"polish": "ekstrahowa\u0107 na ciep\u0142o",
+	"french": "manchette lat\u00e9rale"
+}, {
+	"english": "digital",
+	"german": "digitale",
+	"polish": "cyfrowy",
+	"french": "num\u00e9rique"
+}, {
+	"english": "dimension",
+	"german": "Abmessung",
+	"polish": "w\u0119\u017ca",
+	"french": "cote, dimension"
+}, {
+	"english": "dining",
+	"german": "speisen",
+	"polish": "POK\u00d3J JADALNY",
+	"french": "restauration"
+}, {
+	"english": "dinner",
+	"german": "Abendessen",
+	"polish": "kolacja",
+	"french": "d\u00eener"
+}, {
+	"english": "direct",
+	"german": "direkten",
+	"polish": "bezpo\u015bredni",
+	"french": "direct"
+}, {
+	"english": "direction",
+	"german": "durchf\u00fchren",
+	"polish": "kierunek",
+	"french": "direction"
+}, {
+	"english": "directly",
+	"german": "direkt",
+	"polish": "bezpo\u015brednio",
+	"french": "directement"
+}, {
+	"english": "director",
+	"german": "Regie",
+	"polish": "dyrektor",
+	"french": "Adobe Director"
+}, {
+	"english": "dirt",
+	"german": "Schmutz",
+	"polish": "zabrudzeniem",
+	"french": "terre"
+}, {
+	"english": "dirty",
+	"german": "dreckig",
+	"polish": "zanieczyszczona",
+	"french": "sale"
+}, {
+	"english": "disability",
+	"german": "Behinderung",
+	"polish": "niepe\u0142nosprawno\u015b\u0107",
+	"french": "handicap\u00e9es"
+}, {
+	"english": "disagree",
+	"german": "dagegen",
+	"polish": "Nie zgadzam si\u0119",
+	"french": "d'accord"
+}, {
+	"english": "disappear",
+	"german": "Ausblenden",
+	"polish": "zniknie.",
+	"french": "disparaitre"
+}, {
+	"english": "disaster",
+	"german": "Desaster",
+	"polish": "katastrofa",
+	"french": "cons\u00e9cutif"
+}, {
+	"english": "discipline",
+	"german": "Disziplin",
+	"polish": "dyscypliny",
+	"french": "discipline"
+}, {
+	"english": "discourse",
+	"german": "Diskurs",
+	"polish": "Dyskurs",
+	"french": "discours"
+}, {
+	"english": "discover",
+	"german": "discover",
+	"polish": "Odkryj",
+	"french": "D\u00e9couvrez"
+}, {
+	"english": "discovery",
+	"german": "Entdeckung",
+	"polish": "odkrycie naukowe",
+	"french": "d\u00e9couverte"
+}, {
+	"english": "discrimination",
+	"german": "Diskriminierung",
+	"polish": "dyskryminacja",
+	"french": "discrimination"
+}, {
+	"english": "discuss",
+	"german": "diskutieren.",
+	"polish": "dyskutowa\u0107",
+	"french": "d\u00e9battre"
+}, {
+	"english": "discussion",
+	"german": "Diskussion",
+	"polish": "dyskusja",
+	"french": "discussion"
+}, {
+	"english": "disease",
+	"german": "Krankheit",
+	"polish": "choroba",
+	"french": "maladie"
+}, {
+	"english": "dish",
+	"german": "Gericht",
+	"polish": "Antena",
+	"french": "coupelle, creuset, cuvette, r\u00e9cipient"
+}, {
+	"english": "dismiss",
+	"german": "Ausblenden",
+	"polish": "ukryj",
+	"french": "ignorer"
+}, {
+	"english": "disorder",
+	"german": "st\u00f6rungen,",
+	"polish": "+neutropenia,",
+	"french": "Affection"
+}, {
+	"english": "display",
+	"german": "Display",
+	"polish": "wy\u015bwietlacz",
+	"french": "affichage"
+}, {
+	"english": "dispute",
+	"german": "Streit",
+	"polish": "sp\u00f3r",
+	"french": "litige"
+}, {
+	"english": "distance",
+	"german": ".",
+	"polish": "instalacji",
+	"french": "distance"
+}, {
+	"english": "distant",
+	"german": "distanziert",
+	"polish": "Niedost\u0119pny",
+	"french": "distante"
+}, {
+	"english": "distinct",
+	"german": "deutlich",
+	"polish": "odr\u0119bna;",
+	"french": "distincte"
+}, {
+	"english": "distinction",
+	"german": "Auszeichnung",
+	"polish": "Wyr\u00f3\u017cnienie",
+	"french": "distinction"
+}, {
+	"english": "distinguish",
+	"german": "unterscheiden",
+	"polish": "Rozr\u00f3\u017cnij",
+	"french": "distinguer"
+}, {
+	"english": "distribute",
+	"german": "vertreiben",
+	"polish": "je rozdaj",
+	"french": "distribuer"
+}, {
+	"english": "distribution",
+	"german": "Lieferung",
+	"polish": "rozmieszczenie.",
+	"french": "de distribution"
+}, {
+	"english": "district",
+	"german": "Bezirk",
+	"polish": "obszar",
+	"french": "district"
+}, {
+	"english": "diverse",
+	"german": "unterschiedlich",
+	"polish": "zr\u00f3\u017cnicowany",
+	"french": "diversifi\u00e9e"
+}, {
+	"english": "diversity",
+	"german": "Vielfalt",
+	"polish": "rozmaito\u015b\u0107",
+	"french": "diversit\u00e9"
+}, {
+	"english": "divide",
+	"german": "Wasserscheide",
+	"polish": "podzieli\u0107",
+	"french": "ligne de partage, (g\u00e9ol)"
+}, {
+	"english": "division",
+	"german": "Bereiches",
+	"polish": "podzia\u0142",
+	"french": "division, embranchement, (premi\u00e9re division taxinomique)"
+}, {
+	"english": "divorce",
+	"german": "scheidung",
+	"polish": "rozw\u00f3d",
+	"french": "la s\u00e9paration et le divorce;"
+}, {
+	"english": "DNA",
+	"german": "DNA",
+	"polish": "DNA",
+	"french": "L'OPPORTUNIT\u00c9"
+}, {
+	"english": "do",
+	"german": "do",
+	"polish": "robi\u0107",
+	"french": "\u00c0 faire"
+}, {
+	"english": "doctor",
+	"german": "Arzt",
+	"polish": "lekarz",
+	"french": "m\u00e9decin"
+}, {
+	"english": "document",
+	"german": "Dokument",
+	"polish": "dokument",
+	"french": "document"
+}, {
+	"english": "dog",
+	"german": "Hund",
+	"polish": "klamra ciesielska",
+	"french": "chien"
+}, {
+	"english": "domestic",
+	"german": "inl\u00e4ndisch",
+	"polish": "domowy",
+	"french": "les locaux"
+}, {
+	"english": "dominant",
+	"german": "Dominante",
+	"polish": "czynnik dominuj\u0105cy",
+	"french": "dominant"
+}, {
+	"english": "dominate",
+	"german": "dominieren",
+	"polish": "Dominat",
+	"french": "dominer"
+}, {
+	"english": "door",
+	"german": "t\u00fcr",
+	"polish": "drzwi",
+	"french": "porte"
+}, {
+	"english": "double",
+	"german": "doppelt",
+	"polish": "podw\u00f3jnie",
+	"french": "double, rame double, (rame de deux tiges de forage ou de tubage)"
+}, {
+	"english": "doubt",
+	"german": "Zweifel",
+	"polish": "No Doubt",
+	"french": "douter"
+}, {
+	"english": "down",
+	"german": "down",
+	"polish": "d\u00f3\u0142",
+	"french": "en bas"
+}, {
+	"english": "downtown",
+	"german": "Innenstadt",
+	"polish": "Downtown",
+	"french": "quartier des affaires"
+}, {
+	"english": "dozen",
+	"german": "Dutzend",
+	"polish": "Tuzin",
+	"french": "douzaine"
+}, {
+	"english": "draft",
+	"german": "Vorschau",
+	"polish": "nowa",
+	"french": "\u00e9bauche"
+}, {
+	"english": "drag",
+	"german": "ziehen",
+	"polish": "ci\u0105gni\u0119cie",
+	"french": "crochon, (d''une faille), drague, rebroussement, (torsion localis\u00e9e des couches, due aux frottements des l\u00e8vres d'une faille), r\u00e9sistance, tirage, tra\u00een\u00e9e"
+}, {
+	"english": "drama",
+	"german": "Drama",
+	"polish": "Dramat",
+	"french": "drama"
+}]
+
+export default Result;
