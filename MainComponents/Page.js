@@ -5,7 +5,7 @@ export default class Page extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text> textInComponent </Text>
+                <Text> test dzialania </Text>
             </View>
         )
     }
@@ -14,7 +14,7 @@ export default class Page extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-	marginTop:50,
+color:"#fff"
     },
   
 });
