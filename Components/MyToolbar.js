@@ -29,16 +29,19 @@ export default class MyToolbar extends Component {
             <Button transparent>{arrowIcon}</Button>
          
           </Left>
-          <Body>
+          <Body style={styles.bodyStyle}>
             <Button>
               <Text>LANG1</Text>
-              {arrowrightIcon}
+            
             </Button>
+          <Button>{arrowrightIcon}</Button> 
+            <Button>
+              <Text>LANG2</Text>
+            </Button>
+
           </Body>
           <Right style={styles.rightStyle}>
-          <Button transparent>
-            <Text>LANG2</Text>
-            </Button>
+       
             <Button transparent>
               <Icon name="settings" />
             </Button>
@@ -52,6 +55,7 @@ export default class MyToolbar extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignContent:"space-between",
   },
   rowContainer: {
     flexDirection: "row",
@@ -62,6 +66,11 @@ const styles = StyleSheet.create({
 
   },
   rightStyle: {
-    flex:0.5
+    flex:0.6,
+    
+  },
+  bodyStyle: {
+    justifyContent:"flex-end",
+    flexDirection:"row",
   }
 });
