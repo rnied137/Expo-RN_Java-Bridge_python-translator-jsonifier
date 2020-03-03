@@ -42,9 +42,6 @@ export default class App extends React.Component {
           <Toolbar />
         </Container>
         <Container style={styles.halfScreen}>
-          <Page />
-        </Container>
-        <Container style={styles.halfScreen}>
           <MainPage />
         </Container>
       </Container>
@@ -67,6 +64,6 @@ const styles = StyleSheet.create({
     flex: 0.3
   },
   halfScreen: {
-    flex: 0.45
+    flex: 0.9,
   }
 });

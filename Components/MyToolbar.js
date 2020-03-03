@@ -15,7 +15,7 @@ import IonicsIcon from "react-native-vector-icons/Ionicons";
 import AwesomeIcon from "react-native-vector-icons/FontAwesome";
 import AntDesigIcon from "react-native-vector-icons/AntDesign";
 
-const arrowIcon = <AwesomeIcon name="rocket" size={30} color="#900" />;
+const arrowIcon = <AwesomeIcon name="rocket" size={30} color="white" />;
 const arrowrightIcon = (
   <AntDesigIcon name="arrowright" size={30} color="#fff" />
 );

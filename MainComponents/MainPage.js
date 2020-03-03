@@ -3,7 +3,16 @@ import { Text, View, StyleSheet, TouchableOpacity } from 'react-native'
 import {Container, Card, CardItem, Badge} from 'native-base'
 import MyToolbar from '../Components/MyToolbar';
 import Json from '../Components/Result';
+import AntDesigIcon from "react-native-vector-icons/AntDesign";
 
+const doubleRightIcon = <AntDesigIcon name="doubleright" size={50} color="#0074D9" />;
+const doubleLeftIcon = <AntDesigIcon name="doubleleft" size={50} color="#0074D9" />;
+const playIcon = <AntDesigIcon name="playcircleo" size={50} color="#0074D9" />;
+
+
+const doubleRightIconLower = <AntDesigIcon name="doubleright" size={50} color="##DDDDDD" />;
+const doubleLeftIconLower = <AntDesigIcon name="doubleleft" size={50} color="##DDDDDD" />;
+const playIconLower = <AntDesigIcon name="playcircleo" size={50} color="##DDDDDD" />;
 
 
 export default class MainPage extends Component {
@@ -34,52 +43,71 @@ german: ''
     render() {
     return (
 
-<TouchableOpacity onPress={this.SetRandomState} style={styles.textNodeCss}>
-    <Container style={styles.wrapper}>
-                        
 
-        <Card><Text>Polish:</Text>
-        <Badge style={{ backgroundColor: 'blue' }}><Text>1</Text></Badge>
-            <CardItem style={styles.singleCard}>
-            <Text  style={styles.myfont}> 
-            {this.state.polish}
-                </Text>
-            </CardItem>
-        </Card>
-        <Card><Text>English:</Text>
-        <Badge style={{ backgroundColor: 'yellow' }}><Text>2</Text></Badge>
-            <CardItem style={styles.singleCard}>
-            <Text  style={styles.myfont}> 
-            {this.state.english}
-                </Text>
-            </CardItem>
-        </Card>
-        <Card><Text>French:</Text>
-        <Badge style={{ backgroundColor: 'green' }}><Text>3</Text></Badge>
-            <CardItem style={styles.singleCard}>
-            <Text  style={styles.myfont}> 
-            {this.state.french}
-                </Text>
-            </CardItem>
-        </Card>
-        <Card><Text>German:</Text>
-        <Badge><Text>4</Text></Badge>
-            <CardItem style={styles.singleCard}>
-            <Text style={styles.myfont}> 
-            {this.state.german}
-                </Text>
-            </CardItem>
-        </Card>
-    
-        </Container>
-           </TouchableOpacity>
+   
+    <Container>
+<Container style={styles.upper}>
+<Container style={styles.fifth}></Container>
+
+
+<Container style={styles.oneFifth}>
+{doubleLeftIcon}
+{playIcon}
+{doubleRightIcon}
+</Container>
+
+</Container>
+
+<Container style={styles.lower}>
+<Container style={styles.fifth}></Container>
+
+
+<Container style={styles.oneFifth}>
+    <TouchableOpacity>
+    {doubleLeftIconLower}
+    </TouchableOpacity>
+
+    <TouchableOpacity>
+    {playIconLower}
+    </TouchableOpacity>
+
+    <TouchableOpacity>
+    {doubleRightIconLower}
+    </TouchableOpacity>
+
+
+
+
+</Container>
+</Container>
+
+    </Container>
        )
     }
 }
 
 
-const styles = StyleSheet.create({
-	container: {
- 
+const styles = StyleSheet.create({  
+    upper: {
+        backgroundColor:"#001f3f",
+        borderBottomWidth:2,
+    },
+    lower: {
+        backgroundColor:"#01FF70",
+        borderWidth:1.5,
+    },
+    oneFifth: {
+        flex:2,
+        flexDirection:"row",
+        alignContent:"center",
+        justifyContent:"space-around",
+        backgroundColor:"#3D9970",
+        alignItems:"center",
+
+    },
+    fifth: {
+        flex:5,
+        backgroundColor:"#01FF70",
+
     }
 });
