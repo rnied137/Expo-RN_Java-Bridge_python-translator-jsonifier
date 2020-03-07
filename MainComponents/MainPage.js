@@ -4,15 +4,16 @@ import {Container, Card, CardItem, Badge} from 'native-base'
 import MyToolbar from '../Components/MyToolbar';
 import Json from '../Components/Result';
 import AntDesigIcon from "react-native-vector-icons/AntDesign";
+import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
-const doubleRightIcon = <AntDesigIcon name="doubleright" size={50} color="#0074D9" />;
-const doubleLeftIcon = <AntDesigIcon name="doubleleft" size={50} color="#0074D9" />;
-const playIcon = <AntDesigIcon name="playcircleo" size={50} color="#0074D9" />;
+const doubleRightIcon = <SimpleLineIcons name="arrow-right" size={50} color="#0074D9" />;
+const doubleLeftIcon = <SimpleLineIcons name="arrow-left" size={50} color="#0074D9" />;
+const playIcon = <SimpleLineIcons name="volume-2" size={50} color="#0074D9" />;
 
 
-const doubleRightIconLower = <AntDesigIcon name="doubleright" size={50} color="##DDDDDD" />;
-const doubleLeftIconLower = <AntDesigIcon name="doubleleft" size={50} color="##DDDDDD" />;
-const playIconLower = <AntDesigIcon name="playcircleo" size={50} color="##DDDDDD" />;
+const doubleRightIconLower = <SimpleLineIcons name="arrow-right" size={50} color="##DDDDDD" />;
+const doubleLeftIconLower = <SimpleLineIcons name="arrow-left" size={50} color="##DDDDDD" />;
+const playIconLower = <SimpleLineIcons name="volume-2" size={50} color="##DDDDDD" />;
 
 
 export default class MainPage extends Component {
@@ -22,7 +23,8 @@ export default class MainPage extends Component {
 polish: '',
 english: '',
 french: '',
-german: ''
+german: '',
+number:0
         }             
     }
 
@@ -37,6 +39,7 @@ german: ''
             german: Json[rand].german,
             french: Json[rand].french,
             english: Json[rand].english,
+            number:rand,
         })
     }
     
@@ -46,20 +49,19 @@ german: ''
 
    
     <Container>
-<Container style={styles.upper}>
-<Container style={styles.fifth}></Container>
-
-
-<Container style={styles.oneFifth}>
-{doubleLeftIcon}
-{playIcon}
-{doubleRightIcon}
+<Container press={this.SetRandomState} style={styles.upper}>
+<Container style={styles.fifth}>
+    <Text> #{this.state.number}</Text>
+<Text style={styles.decoratedText}>{this.state.english}</Text>
 </Container>
-
 </Container>
 
 <Container style={styles.lower}>
-<Container style={styles.fifth}></Container>
+<Container style={styles.fifth}>
+<Text> #{this.state.number}</Text>
+<Text style={styles.decoratedText}>{this.state.german}</Text>
+
+</Container>
 
 
 <Container style={styles.oneFifth}>
@@ -90,11 +92,9 @@ german: ''
 const styles = StyleSheet.create({  
     upper: {
         backgroundColor:"#001f3f",
-        borderBottomWidth:2,
     },
     lower: {
         backgroundColor:"#01FF70",
-        borderWidth:1.5,
     },
     oneFifth: {
         flex:2,
@@ -108,6 +108,20 @@ const styles = StyleSheet.create({
     fifth: {
         flex:5,
         backgroundColor:"#01FF70",
+        alignContent:"center",
+        justifyContent:"center",
+        alignItems:"center",
 
-    }
+       
+    
+
+
+
+    },
+    decoratedText:{
+        fontSize:25,
+        color:"#fff",
+
+
+    },
 });
