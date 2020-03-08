@@ -6,14 +6,14 @@ import Json from '../Components/Result';
 import AntDesigIcon from "react-native-vector-icons/AntDesign";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
-const doubleRightIcon = <SimpleLineIcons name="arrow-right" size={50} color="#0074D9" />;
-const doubleLeftIcon = <SimpleLineIcons name="arrow-left" size={50} color="#0074D9" />;
-const playIcon = <SimpleLineIcons name="volume-2" size={50} color="#0074D9" />;
+const doubleRightIcon = <SimpleLineIcons name="arrow-right" size={50} color="white" />;
+const doubleLeftIcon = <SimpleLineIcons name="arrow-left" size={50} color="white" />;
+const playIcon = <SimpleLineIcons name="volume-2" size={50} color="white" />;
 
 
-const doubleRightIconLower = <SimpleLineIcons name="arrow-right" size={50} color="##DDDDDD" />;
-const doubleLeftIconLower = <SimpleLineIcons name="arrow-left" size={50} color="##DDDDDD" />;
-const playIconLower = <SimpleLineIcons name="volume-2" size={50} color="##DDDDDD" />;
+const doubleRightIconLower = <SimpleLineIcons name="arrow-right" size={50} color="white" />;
+const doubleLeftIconLower = <SimpleLineIcons name="arrow-left" size={50} color="white" />;
+const playIconLower = <SimpleLineIcons name="volume-2" size={50} color="white" />;
 
 
 export default class MainPage extends Component {
@@ -48,8 +48,12 @@ number:0
 
 
    
-    <Container>
+    <Container style={styles.main}>
 <Container press={this.SetRandomState} style={styles.upper}>
+    <Container style={styles.stickyNote}>
+     
+  
+  
 <Container style={styles.fifth}>
     <Text> #{this.state.number}</Text>
 <Text style={styles.decoratedText}>{this.state.english}</Text>
@@ -57,23 +61,27 @@ number:0
 </Container>
 
 <Container style={styles.lower}>
+<Container style={styles.stickyNote}>
 <Container style={styles.fifth}>
 <Text> #{this.state.number}</Text>
 <Text style={styles.decoratedText}>{this.state.german}</Text>
 
 </Container>
+</Container>
+</Container>
 
 
-<Container style={styles.oneFifth}>
-    <TouchableOpacity>
+<Container style={styles.Icons}>
+    
+    <TouchableOpacity onPress={this.SetRandomState} style={{padding:"10%"}}    >
     {doubleLeftIconLower}
     </TouchableOpacity>
 
-    <TouchableOpacity>
+    <TouchableOpacity style={{padding:"10%"}}>
     {playIconLower}
     </TouchableOpacity>
 
-    <TouchableOpacity>
+    <TouchableOpacity onPress={this.SetRandomState} style={{padding:"10%"}}>
     {doubleRightIconLower}
     </TouchableOpacity>
 
@@ -89,25 +97,29 @@ number:0
 }
 
 
-const styles = StyleSheet.create({  
+
+const styles = StyleSheet.create({
+    main: {
+        backgroundColor:"blue",
+    },
     upper: {
-        backgroundColor:"#001f3f",
     },
     lower: {
         backgroundColor:"#01FF70",
     },
-    oneFifth: {
-        flex:2,
+    Icons: {
+        flex:0.4,
         flexDirection:"row",
         alignContent:"center",
         justifyContent:"space-around",
         backgroundColor:"#3D9970",
         alignItems:"center",
+        
 
     },
     fifth: {
         flex:5,
-        backgroundColor:"#01FF70",
+        backgroundColor:"rgb(255, 255, 136)",
         alignContent:"center",
         justifyContent:"center",
         alignItems:"center",
@@ -119,9 +131,19 @@ const styles = StyleSheet.create({
 
     },
     decoratedText:{
-        fontSize:25,
-        color:"#fff",
+        fontSize:30,
+        color:"black",
+        textTransform:"uppercase",
 
 
+    },
+    stickyNote: {
+        backgroundColor: "rgba(243,245,228,0.5)",
+        borderStyle: "solid",
+        borderWidth:15,
+        borderColor: "rgba(255,255,255,0.5)",
+        borderWidth:14,
+        
+       
     },
 });
