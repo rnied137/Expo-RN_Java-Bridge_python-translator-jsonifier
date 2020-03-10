@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
         backgroundColor:"blue",
     },
     upper: {
+        backgroundColor:"#01FF70",
     },
     lower: {
         backgroundColor:"#01FF70",
