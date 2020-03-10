@@ -21,6 +21,15 @@ const arrowrightIcon = (
 );
 
 export default class MyToolbar extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+lang1:"english",
+lang2:"german"
+    }             
+}
+  
   render() {
     return (
       <Container style={styles.container}>
@@ -31,12 +40,12 @@ export default class MyToolbar extends Component {
           </Left>
           <Body style={styles.bodyStyle}>
             <Button>
-              <Text>LANG1</Text>
+              <Text>{this.state.lang1}</Text>
             
             </Button>
           <Button>{arrowrightIcon}</Button> 
             <Button>
-              <Text>LANG2</Text>
+              <Text>{this.state.lang2}</Text>
             </Button>
 
           </Body>
@@ -66,11 +75,12 @@ const styles = StyleSheet.create({
 
   },
   rightStyle: {
-    flex:0.6,
+    flex:0.4,
     
   },
   bodyStyle: {
-    justifyContent:"flex-end",
+    justifyContent:"center",
     flexDirection:"row",
+    alignContent:"center"
   }
 });
