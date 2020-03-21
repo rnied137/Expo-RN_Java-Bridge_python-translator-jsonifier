@@ -1,86 +1,61 @@
-import React, { Component } from "react";
-import { View, StyleSheet } from "react-native";
-import {
-  Container,
-  Header,
-  Left,
-  Body,
-  Right,
-  Button,
-  Icon,
-  Title,
-  Text
-} from "native-base";
-import IonicsIcon from "react-native-vector-icons/Ionicons";
+import React, {useContext} from "react";
+import { StyleSheet} from "react-native";
+import { Container, Header, Button, Text } from "native-base";
 import AwesomeIcon from "react-native-vector-icons/FontAwesome";
 import AntDesigIcon from "react-native-vector-icons/AntDesign";
+import LanguageContext from '../context/LanguageContext';
+
 
 const arrowIcon = <AwesomeIcon name="rocket" size={30} color="white" />;
 const arrowrightIcon = (
   <AntDesigIcon name="arrowright" size={30} color="#fff" />
 );
 
-export default class MyToolbar extends Component {
+const context = LanguageContext;
+const MyToolbar = (navigate) => {
 
-  constructor(props){
-    super(props);
-    this.state = {
-lang1:"english",
-lang2:"german"
-    }             
-}
-  
-  render() {
-    return (
-      <Container style={styles.container}>
-        <Header style={styles.rowContainer}>
-          <Left style={styles.leftStyle}>
-            <Button transparent>{arrowIcon}</Button>
-         
-          </Left>
-          <Body style={styles.bodyStyle}>
-            <Button>
-              <Text>{this.state.lang1}</Text>
-            
-            </Button>
-          <Button>{arrowrightIcon}</Button> 
-            <Button>
-              <Text>{this.state.lang2}</Text>
-            </Button>
+const language = useContext(LanguageContext);
 
-          </Body>
-          <Right style={styles.rightStyle}>
-       
-            <Button transparent>
-              <Icon name="settings" />
-            </Button>
-          </Right>
+
+
+  return (
+    <Container style={styles.container}>
+      <Container style={styles.bodyStyle}>
+        <Header>
+          <Button>{arrowIcon}</Button>
+          <Button onPress={()=>navigate.navigate.navigate("MainSettings") }>
+  <Text>{language.languages.l1}</Text>
+          </Button>
+          <Button>{arrowrightIcon}</Button>
+          <Button >
+            <Text>{language.languages.l2}</Text>
+          </Button>
         </Header>
       </Container>
-    );
-  }
-}
+    </Container>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignContent:"space-between",
+    alignContent: "space-between"
   },
   rowContainer: {
     flexDirection: "row",
     alignContent: "space-around"
   },
   leftStyle: {
-    flex:0.4,
-
+    flex: 0.4
   },
   rightStyle: {
-    flex:0.4,
-    
+    flex: 0.4
   },
   bodyStyle: {
-    justifyContent:"center",
-    flexDirection:"row",
-    alignContent:"center"
+    justifyContent: "center",
+    flexDirection: "row",
+    alignContent: "center"
   }
 });
+
+export default MyToolbar;

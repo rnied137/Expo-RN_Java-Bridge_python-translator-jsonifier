@@ -1,20 +1,20 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import MainPage from "./MainComponents/MainPage";
+import { StyleSheet } from "react-native";
 import { AppLoading } from "expo";
 import { Container, Text, Root } from "native-base";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-import Page from "./MainComponents/Page";
-import Toolbar from "./Components/MyToolbar";
+import Navigator from './routes/MainStack';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isReady: false
+      isReady: false,
     };
   }
+
+  
 
   async componentDidMount() {
     await Font.loadAsync({
@@ -37,14 +37,14 @@ export default class App extends React.Component {
       // <Root style={styles.container}>
       //	<MainPage  />
       //</Root>
-      <Container style={styles.container2}>
-        <Container style={styles.containerHeader}>
-          <Toolbar />
-        </Container>
-        <Container style={styles.halfScreen}>
-          <MainPage />
-        </Container>
+     
+    <Container>
+
+<Text>Dupa</Text>
+      <Navigator />
       </Container>
+     
+
     );
   }
 }

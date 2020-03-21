@@ -5,6 +5,7 @@ import MyToolbar from '../Components/MyToolbar';
 import Json from '../Components/Result';
 import AntDesigIcon from "react-native-vector-icons/AntDesign";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+import { AuthSession } from 'expo';
 
 const doubleRightIcon = <SimpleLineIcons name="arrow-right" size={50} color="white" />;
 const doubleLeftIcon = <SimpleLineIcons name="arrow-left" size={50} color="white" />;
@@ -50,6 +51,7 @@ number:0
    
     <Container style={styles.main}>
 <Container press={this.SetRandomState} style={styles.upper}>
+
     <Container style={styles.stickyNote}>
      
   
@@ -73,15 +75,15 @@ number:0
 
 <Container style={styles.Icons}>
     
-    <TouchableOpacity onPress={this.SetRandomState} style={{padding:"10%"}}    >
+    <TouchableOpacity onPress={this.SetRandomState} style={styles.circleButton}    >
     {doubleLeftIconLower}
     </TouchableOpacity>
 
-    <TouchableOpacity style={{padding:"10%"}}>
+    <TouchableOpacity style={styles.middleButton}>
     {playIconLower}
     </TouchableOpacity>
 
-    <TouchableOpacity onPress={this.SetRandomState} style={{padding:"10%"}}>
+    <TouchableOpacity onPress={this.SetRandomState} style={styles.circleButton}>
     {doubleRightIconLower}
     </TouchableOpacity>
 
@@ -104,6 +106,7 @@ const styles = StyleSheet.create({
     },
     upper: {
         backgroundColor:"#01FF70",
+
     },
     lower: {
         backgroundColor:"#01FF70",
@@ -147,4 +150,22 @@ const styles = StyleSheet.create({
         
        
     },
+    circleButton: {
+        borderRadius: 30,
+        padding:"10%",
+        backgroundColor:"rgba(144, 252, 3,0.9)",
+        borderWidth:3,
+        borderTopWidth:3,
+        
+    },  
+    middleButton: {
+        padding:"10%",
+        borderTopWidth:3,
+        borderBottomEndRadius:25,
+        borderRadius:30,
+        borderLeftWidth:3,
+        borderRightWidth:3,
+        backgroundColor:"rgba(144, 252, 3,0.9)",
+
+    }
 });
