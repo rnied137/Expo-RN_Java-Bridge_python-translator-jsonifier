@@ -39,8 +39,6 @@ export default class App extends React.Component {
       //</Root>
      
     <Container>
-
-<Text>Dupa</Text>
       <Navigator />
       </Container>
      
