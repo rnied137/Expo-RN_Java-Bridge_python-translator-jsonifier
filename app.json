@@ -1,9 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "my-project",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "name": "HelloWorld",
+    "slug": "translate",
     "platforms": [
       "ios",
       "android",
