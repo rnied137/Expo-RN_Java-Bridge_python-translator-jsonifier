@@ -32,3 +32,12 @@ Here is my json file:
 ```
 elvira-ezaa.com for flag icons.
 ```
+
+### Pictures
+
+![Alt text](readmeMDSource/testimage.PNG?raw=true "Alpha Version")
+
+
+
+### Problems
+-Interface might be jumbled until native-base fix dependency issue. Project will be probably wreworked with lottie/Argon React Native
