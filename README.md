@@ -28,7 +28,6 @@ Here is my json file:
 
 
 ### Thanks to
-readmeMDSource/Screen Shot 04-13-20 at 08.02 AM.PNG
 ```
 elvira-ezaa.com for flag icons.
 ```
