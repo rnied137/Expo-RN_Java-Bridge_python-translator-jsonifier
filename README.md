@@ -34,8 +34,9 @@ elvira-ezaa.com for flag icons.
 ```
 
 ### Pictures
-
-![Alt text](readmeMDSource/testimage.PNG?raw=true "Alpha Version")
+![Alt text](readmeMDSource/Screen Shot 04-13-20 at 08.02 AM.PNG?raw=true "Language Chooser version 0.5")
+![Alt text](readmeMDSource/Screen Shot 04-13-20 at 08.03 AM.PNG?raw=true "Another language option")
+![Alt text](readmeMDSource/testimage.PNG?raw=true "Alpha Version 0.1")
 
 
 
