@@ -36,6 +36,9 @@ elvira-ezaa.com for flag icons.
 ### Pictures
 ![Alt text](readmeMDSource/alpha.PNG?raw=true "Language Chooser version 0.5")
 ![Alt text](readmeMDSource/beta.PNG?raw=true "Another language option")
+
+###
+Picutre from early-test development version. There's big change it looks way better now.
 ![Alt text](readmeMDSource/testimage.PNG?raw=true "Alpha Version 0.1")
 
 
